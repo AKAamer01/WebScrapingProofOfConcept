@@ -54,7 +54,7 @@ def save_to_csv(books, file='books.csv'):
 
 
 def main():
-    pageToScrape = input("Welcome to the (books.toscrape) WebScraper\nPlease enter a link:")
+    pageToScrape = input("Welcome to the (books.toscrape.com) site WebScraper\nPlease enter a link:")
     if not re.match(r'https://books\.toscrape\.com', pageToScrape):
         raise ValueError('Not a valid page for the purposes of this scraper')
 
